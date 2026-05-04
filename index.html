@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lumiere Box — Fine Jewelry</title>
+  <title>Lumiere Joyería — Dándote la Luz</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
   <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: {
-            display: ['"Cormorant Garamond"', 'serif'],
-            body: ['Inter', 'sans-serif'],
+            display: ['"Playfair Display"', 'serif'],
+            body: ['Montserrat', 'sans-serif'],
           }
         }
       }
@@ -24,16 +24,18 @@
 
   <style>
     :root {
-      --gold:       #B8962E;
-      --gold-light: #D4AD45;
-      --gold-dim:   #96791F;
-      --ink:        #0D0B08;
-      --ink-2:      #111008;
-      --ink-3:      #1A1710;
-      --cream:      #F5EDD8;
-      --cream-soft: #EDE4CF;
-      --stone:      #6B5E48;
-      --stone-light:#9A8C75;
+      --gold:       #C5A059;
+      --gold-light: #D4B870;
+      --gold-dim:   #A08040;
+      --burgundy:   #630D16;
+      --burgundy-light: #8B1220;
+      --ink:        #1A1A1A;
+      --ink-2:      #1F1F1F;
+      --ink-3:      #262626;
+      --cream:      #F9F7F2;
+      --cream-soft: #F0EDE6;
+      --stone:      #7A6A5A;
+      --stone-light:#9A8C7A;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -42,7 +44,7 @@
     body {
       background-color: var(--ink);
       color: var(--cream);
-      font-family: 'Inter', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       -webkit-font-smoothing: antialiased;
       overflow-x: hidden;
     }
@@ -209,7 +211,7 @@
       color: var(--gold);
     }
     .hero-headline {
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Playfair Display', serif;
       font-size: clamp(3.2rem, 9vw, 7.5rem);
       font-weight: 300; line-height: 1.02; letter-spacing: -0.025em;
       color: var(--cream);
@@ -246,7 +248,7 @@
     .collections { padding: 120px 40px; background: var(--ink); }
     .section-header { text-align: center; margin-bottom: 64px; }
     .section-title {
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Playfair Display', serif;
       font-size: clamp(2.4rem, 5vw, 3.8rem);
       font-weight: 300; letter-spacing: -0.02em;
       color: var(--cream); line-height: 1.1;
@@ -291,7 +293,7 @@
     .card-body { position: absolute; bottom: 0; left: 0; right: 0; padding: 24px; }
     .card-num { font-size: 0.58rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
     .card-name {
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Playfair Display', serif;
       font-size: 1.75rem; font-weight: 300;
       color: var(--cream); letter-spacing: -0.01em;
     }
@@ -350,7 +352,7 @@
       box-shadow: 0 0 60px rgba(184,150,46,0.12), 0 0 120px rgba(184,150,46,0.05);
     }
     .story-stat-num {
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Playfair Display', serif;
       font-size: 2.6rem; font-weight: 300; color: var(--gold); line-height: 1;
     }
     .story-stat-label {
@@ -358,13 +360,13 @@
       color: var(--stone); margin-top: 6px;
     }
     .big-quote {
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Playfair Display', serif;
       font-size: 7rem; font-style: italic;
       color: rgba(184,150,46,0.1); line-height: 0.5;
       margin-bottom: 12px;
     }
     .story-title {
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Playfair Display', serif;
       font-size: clamp(2rem, 3.5vw, 2.9rem);
       font-weight: 300; color: var(--cream);
       line-height: 1.2; letter-spacing: -0.02em;
@@ -375,7 +377,7 @@
     .story-divider { height: 1px; background: linear-gradient(90deg, rgba(184,150,46,0.3), transparent); margin: 32px 0; }
     .stats-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
     .stat-num {
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Playfair Display', serif;
       font-size: 2rem; font-weight: 300; color: var(--gold);
     }
     .stat-label { font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--stone); line-height: 1.5; margin-top: 4px; }
@@ -383,9 +385,9 @@
     /* ---- Features ---- */
     .features {
       padding: 80px 40px;
-      background: var(--ink);
-      border-top: 1px solid rgba(184,150,46,0.08);
-      border-bottom: 1px solid rgba(184,150,46,0.08);
+      background: var(--burgundy);
+      border-top: 1px solid rgba(197,160,89,0.2);
+      border-bottom: 1px solid rgba(197,160,89,0.2);
     }
     .features-inner { display: grid; grid-template-columns: repeat(3, 1fr); max-width: 900px; margin: 0 auto; }
     .feature {
@@ -395,21 +397,21 @@
     .feature + .feature { border-left: 1px solid rgba(184,150,46,0.1); }
     .feat-icon {
       width: 50px; height: 50px; border-radius: 50%;
-      border: 1px solid rgba(184,150,46,0.28);
+      border: 1px solid rgba(197,160,89,0.45);
       display: flex; align-items: center; justify-content: center;
       margin: 0 auto 20px;
       transition: border-color 0.3s, box-shadow 0.3s;
     }
     .feature:hover .feat-icon {
       border-color: var(--gold);
-      box-shadow: 0 0 22px rgba(184,150,46,0.18);
+      box-shadow: 0 0 22px rgba(197,160,89,0.3);
     }
     .feat-title {
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Playfair Display', serif;
       font-size: 1.2rem; font-weight: 400; color: var(--cream);
       letter-spacing: 0.02em; margin-bottom: 12px;
     }
-    .feat-p { font-size: 0.78rem; line-height: 1.82; color: var(--stone); }
+    .feat-p { font-size: 0.78rem; line-height: 1.82; color: rgba(249,247,242,0.75); }
 
     /* ---- Testimonial ---- */
     .testimonial {
@@ -424,7 +426,7 @@
     }
     .stars { display: flex; justify-content: center; gap: 5px; margin-bottom: 36px; }
     .testimonial-quote {
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Playfair Display', serif;
       font-size: clamp(1.45rem, 3vw, 2.2rem);
       font-weight: 300; font-style: italic;
       color: var(--cream-soft); line-height: 1.55;
@@ -446,7 +448,7 @@
     .newsletter::before { top: 0; }
     .newsletter::after { bottom: 0; }
     .newsletter-title {
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Playfair Display', serif;
       font-size: clamp(2rem, 4vw, 3rem);
       font-weight: 300; color: var(--cream);
       letter-spacing: -0.02em; margin-bottom: 16px; margin-top: 28px;
@@ -461,7 +463,7 @@
       border: 1px solid rgba(184,150,46,0.22);
       border-right: none;
       color: var(--cream);
-      outline: none; font-family: 'Inter', sans-serif;
+      outline: none; font-family: 'Montserrat', sans-serif;
       transition: border-color 0.3s;
     }
     .email-input::placeholder { color: var(--stone); }
@@ -471,7 +473,7 @@
       font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 600;
       background: var(--gold); color: var(--ink);
       border: 1px solid var(--gold);
-      cursor: pointer; font-family: 'Inter', sans-serif;
+      cursor: pointer; font-family: 'Montserrat', sans-serif;
       white-space: nowrap;
       transition: background 0.3s, border-color 0.3s;
     }
@@ -627,18 +629,18 @@
   <div class="hero-content">
     <div class="eyebrow">
       <div class="gold-rule"></div>
-      <span>Fine Jewelry Collection</span>
+      <span>Lumiere Joyería — Dándote la Luz</span>
       <div class="gold-rule"></div>
     </div>
 
     <h1 class="hero-headline">
-      Cada Pieza<br/>
-      <em>Narra una<br/>Historia Única</em>
+      Lumiere Joyería<br/>
+      <em>Dándote<br/>la Luz</em>
     </h1>
 
     <p class="hero-sub">
-      Diseños exclusivos que trascienden el tiempo. Artesanía de alta joyería
-      para quienes aprecian lo verdaderamente extraordinario.
+      Joyas únicas, trabajadas con el alma y hechas pa' que brilles
+      dondequiera que aparezcas. Oye, tú te lo mereces todo, asere.
     </p>
 
     <div class="hero-actions">
@@ -668,7 +670,7 @@
       <div class="gold-rule"></div>
     </div>
     <h2 class="section-title">Nuestras Colecciones</h2>
-    <p class="section-sub">Cada colección captura la esencia de la elegancia atemporal, diseñada para los momentos más importantes de tu vida.</p>
+    <p class="section-sub">Mira qué cosa más linda, asere. Cada colección está tremenda, hecha pa' que brillen en los momentos más chéveres de tu vida.</p>
   </div>
 
   <div class="cards-grid">
@@ -768,14 +770,14 @@
       <div class="big-quote">"</div>
 
       <h2 class="story-title">
-        Nacidos del amor por<br/>la <em>belleza eterna</em>
+        Hechas con el corazón,<br/>pa' que tú <em>brilles siempre</em>
       </h2>
 
       <p class="story-p">
-        Lumiere Box nació de una pasión profunda por la joyería artesanal y el deseo de crear piezas que cuenten historias. Cada joya es el resultado de horas de cuidado artesanal, materiales cuidadosamente seleccionados y un compromiso inquebrantable con la excelencia.
+        Oye, Lumiere Joyería no es cualquier cosa. Nació de una pasión tremenda por hacer joyas que de verdad digan algo. Cada pieza es brutal — horas de trabajo, materiales de primera y un cariño que se nota en cuanto te la pones.
       </p>
       <p class="story-p">
-        Creemos que la verdadera joyería de lujo va más allá de los materiales — reside en el significado, el cuidado y la historia que cada pieza lleva consigo al mundo.
+        Creemos que una joya candela va más allá del material. Es la historia que cuenta, el alma con que fue hecha y la luz que te da cuando la llevas. ¡Qué nota, chico!
       </p>
 
       <div class="story-divider"></div>
@@ -810,8 +812,8 @@
           <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
         </svg>
       </div>
-      <h3 class="feat-title">Diseño Artesanal</h3>
-      <p class="feat-p">Cada pieza es meticulosamente elaborada a mano por artesanos especializados con décadas de experiencia en alta joyería.</p>
+      <h3 class="feat-title">Hecho a Mano, Asere</h3>
+      <p class="feat-p">Cada pieza sale de manos expertas con una dedicación brutal. Se nota en cada detalle, eso no es cuento.</p>
     </div>
 
     <div class="feature reveal reveal-delay-1">
@@ -820,8 +822,8 @@
           <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
         </svg>
       </div>
-      <h3 class="feat-title">Materiales Premium</h3>
-      <p class="feat-p">Trabajamos exclusivamente con los materiales más finos: oro 18k, plata esterlina y piedras preciosas certificadas.</p>
+      <h3 class="feat-title">Lo Mejor del Mejor</h3>
+      <p class="feat-p">Oro 18k, plata esterlina y piedras preciosas certificadas. Nada de segunda, solo lo más candela pa' ti.</p>
     </div>
 
     <div class="feature reveal reveal-delay-2">
@@ -831,8 +833,8 @@
           <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
         </svg>
       </div>
-      <h3 class="feat-title">Envío Internacional</h3>
-      <p class="feat-p">Llevamos nuestra joyería a más de 30 países con packaging de lujo y seguro completo en cada envío.</p>
+      <h3 class="feat-title">Pa' Todo el Mundo</h3>
+      <p class="feat-p">Más de 30 países reciben nuestras joyas. Donde estés, te llega con un packaging que está de muerte.</p>
     </div>
 
   </div>
@@ -859,7 +861,7 @@
     </div>
 
     <blockquote class="testimonial-quote reveal">
-      "El collar que recibí superó todas mis expectativas. La atención al detalle, la calidad de los materiales y el empaque de lujo lo hacen verdaderamente especial. Lumiere Box ha ganado una clienta de por vida."
+      "Mira, yo pensé que era exagerado, pero cuando me llegó el collar casi lloro — qué cosa más brutal. El detalle, el empaque, todo está de muerte. Lumiere Joyería me ganó pa' siempre, chico."
     </blockquote>
 
     <div class="testimonial-author reveal">
@@ -878,10 +880,10 @@
   </div>
 
   <h2 class="newsletter-title reveal">
-    Únete a la Familia<br/><em>Lumiere Box</em>
+    Únete a la Familia<br/><em>Lumiere</em>
   </h2>
   <p class="newsletter-sub reveal">
-    Sé el primero en conocer nuestras nuevas colecciones, ofertas exclusivas y las últimas novedades en joyería de lujo.
+    Oye, no te quedes fuera. Entérate primero de colecciones nuevas, ofertas chéveres y todo lo que está pasando. ¡Qué volá!
   </p>
 
   <form class="email-form reveal" onsubmit="handleSubscribe(event)">
@@ -899,7 +901,7 @@
     <!-- Brand col -->
     <div>
       <img src="brand_assets/Transparent-PNG-01.png" alt="Lumiere Box" style="height:36px;width:auto;" />
-      <p class="footer-tagline">Joyería de alta calidad que captura la esencia de lo que más valoras. Cada pieza, una historia.</p>
+      <p class="footer-tagline">Joyas hechas con el alma cubana. Porque lo bueno siempre merece brillar, asere.</p>
       <div class="social-links">
         <!-- Instagram -->
         <a href="#" class="social-link" aria-label="Instagram">
